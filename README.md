@@ -20,32 +20,54 @@ bits), and the autocorrelation property (low cross-correlation).
 void generatePNSequence(); 
 
 int main() { 
+
 generatePNSequence(); 
+
 return 0; 
 } 
+
 void generatePNSequence() { 
 int lfsr[3] = {1, 0, 1};  
+
 int pnSequence[N]; 
+
 int feedback, i, j; 
 printf("Initial LFSR state: "); 
+
 for (i = 0; i < 3; i++) { 
+
 printf("%d ", lfsr[i]); 
+
 } 
+
 printf("\n"); 
+
 for (i = 0; i < N; i++) { 
 pnSequence[i] = lfsr[2];  
+
 feedback = lfsr[2] ^ lfsr[0]; 
 for (j = 2; j > 0; j--) { 
+
 lfsr[j] = lfsr[j - 1]; 
 } 
+
 lfsr[0] = feedback;  
+
 } 
+
+
 printf("Generated PN sequence:\n"); 
 for (i = 0; i < N; i++) { 
+
+
 printf("%d ", pnSequence[i]); 
 } 
+
+
 printf("\n");  
+
 }
+
 
 # MANUAL CALCULATION: 
 • For (3, 1) 
