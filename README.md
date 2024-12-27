@@ -16,7 +16,9 @@ bits), and the autocorrelation property (low cross-correlation).
 # C CODE : 
 #include <stdio.h> 
 #define N 7   
+
 void generatePNSequence(); 
+
 int main() { 
 generatePNSequence(); 
 return 0; 
