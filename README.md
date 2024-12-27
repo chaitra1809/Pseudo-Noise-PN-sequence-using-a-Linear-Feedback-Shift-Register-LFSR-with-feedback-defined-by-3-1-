@@ -12,6 +12,9 @@ The sequence appears random but follows a predictable pattern. It satisfies the 
 (equal number of ones and zeros in a period), the run-length property (distribution of consecutive 
 bits), and the autocorrelation property (low cross-correlation). 
 
+# Block Diagram:
+![image](https://github.com/user-attachments/assets/9ead1144-cd73-4854-aeab-4e4a1e6f3d2c)
+
 
 # C CODE : 
 #include <stdio.h> 
@@ -77,6 +80,10 @@ as intermediate
 • Length =2^n-1 
 =2^3-1 
 =7 
+
+# Output:
+![image](https://github.com/user-attachments/assets/0023fdac-4dea-4937-878a-5188a458dd5d)
+
 
 # CONCLUSIONS: 
 The experiment successfully demonstrated the generation of a PN sequence using an LFSR with 
